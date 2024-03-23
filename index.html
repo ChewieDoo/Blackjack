@@ -1,0 +1,23 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1>Blackjack</h1>
+        <p id="messageEl">Want to play a round?</p>
+        <p id="dealerHandEl">Dealer's hand: </p>
+        <br><br>
+        <p id="playerCardEl">Your hand: </p>
+        <p id="sumEl">Sum: </p>
+        <p id="displayName" style="display:none;"></p>
+        <label id="nameEntry" for="playerName">Enter your name:</label>
+        <input type="text" id="nameInput" name="playerName">
+        <br><br>
+        <button id="startBtn" onclick="startGame()">START GAME</button>
+        <button id="nextBtn" style="display:none;" onclick="nextRound()">CONTINUE</button>
+        <button id="quitBtn" style="display:none;" onclick="quitGame()">QUIT</button>
+        <button id="newCardBtn" onclick="newCard()" style="display:none;">NEW CARD</button>
+        <button id="foldBtn" onclick="fold()" style="display:none;">FOLD</button>
+        <script src="index.js"></script>
+    </body>
+</html>
